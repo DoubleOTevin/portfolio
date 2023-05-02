@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Prot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha383-SZXxX3whJ79/gErwcOYf+zWLeJdY/qpuqC3cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">TEVIN</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Software Developer</p>
+                <h1>Hi, I'm <br><span>Tevin</span> Omoruan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Tevin-Pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a self-driven and accomplished Full Stack Software Developer. 
+                    I have over 5 years of professional experience in the field and with several 
+                    different programming languages, frameworks and developer tools. I am for a new
+                    opportunity where I can grow, learn, and put my skills as a developer to use.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills & Tools</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software</span><br>HTML5, CSS3, SASS, JavaScript, Java, jQuery, SQL, Python, C#, Bootstrap</li>
+                            <li><span>Frameworks</span><br>ReactJS, Angular, Django, Node.js, Ruby on Rails, .Net</li>
+                            <li><span>Developer Tools</span><br>Git, VS Code, Visual Studio, Lucid Charts, Figma, Jira, Firebase, MariaDB</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>SCADA Application Developer at ALPS Inc.</li>
+                            <li><span>Nov 2021 - Jan 2022</span><br>Front-End Developer, Contract at Ivory Oak Financial</li>
+                            <li><span>May 2021 - Sept 2021</span><br>Full-Stack Developer, Intership at Sinai Foundation Canada</li>
+                            <li><span>2020-2021</span><br>Computer Science Lab Instructional Assistant at Wilfrid Laurier University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a developer, it is essential to understand the principles of web design, such as layout, color, typography, and user experience. Good design is not just about making a website look visually appealing but also making it easy to navigate and use. It is crucial to consider the needs and preferences of your target audience when designing a website. Accessibility is also a crucial aspect of web design, as it ensures that all users can access and use the website regardless of any disabilities.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX/UI design is an essential component of any successful software development project. It involves designing the user interface and experience to ensure that the end-users can interact with the product in a seamless and intuitive way. As a developer, having a basic understanding of UX/UI design principles and best practices can help you create software that not only functions well but also delivers an exceptional user experience.</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design is a critical aspect of building a successful mobile application. These principles include optimizing for different screen sizes, creating an intuitive and straightforward user interface, and prioritizing functionality over design aesthetics. It is critical that app design be taken into account since majority of people get information and content on mobile devices</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/sinai.png">
+                    <div class="layer">
+                        <h3>Sinai Foundation Canada</h3>
+                        <p>The goal was to develop an enhanced website using React.js for a non-profit organization. The new website provides easy-to-use navigation and engaging visuals to inspire visitors to support the organization's mission
+                        </p>
+                        <a href="https://sinaifoundation.ca/" target="_blank"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/achieve.png">
+                    <div class="layer">
+                        <h3>Achieve</h3>
+                        <p>This project's goal was to redesign a companies website to help with current web design practices. Using modern design principles to create a user-friendly interface that the client was looking for</p>
+                        <a href="https://achievecea.com/" target="_blank"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ceadl.png">
+                    <div class="layer">
+                        <h3>Ceadl</h3>
+                        <p>The aim for this project to build a mordern website to help with the company rebranding. The new site will feature user-friendly navigation and interactable pages to help show what the company and its partners stand for.</p>
+                        <a href="https://ceadl.com/" target="_blank"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> tevinomoruan@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 647-975-6366</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/DoubleOTevin" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/doubleotevin/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tevin-omoruan-872235160/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/DoubleOTevin"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Tevin Omoruan</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmWKGF2Mbq46i-HDBwskyfem0j4GJKYNTL_hbRE7yg4589-ykRewRmoZBnlI_fTXb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""},5000)
+                    form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>    
+</html>
